@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: black;
+    font-family: "Montserrat";
+}
+
+.logo{
+    position: relative;
+    left: 10px;
+   width:75px; 
+  
+   
+}
+
+
+.navbar{
+
+    /* margin-left: -100px; */
+    /* margin-left: 10px; */
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 10vh;
+    background-color: black;
+    color: #ffffff;
+    font-family: "Montserrat";
+    padding: 0 225px;
+    
+}
+
+.navbar .grow-list .list {
+   position: absolute;
+   left: 400px;
+   top:25px;
+}
+
+
+.navbar .grow-list .list .list-item{
+    display: inline;
+    margin-right:50px;
+    font-size: smaller;
+    cursor:default;
+    
+}
+
+.container .navbar .line{
+    position: absolute;
+    left: 350px;
+    height: 3vh;
+    content: "";
+    border-left: .8px dotted #ffffff;
+    border-right: .8px dotted #ffffff;
+
+}
+.button-small{
+   
+    background-color: #b90ec4;
+    padding:.5rem 1.5rem ;
+    border-radius: .3rem;
+    /* color: #ffffff; */
+    color: inherit;
+    font-family: "Montserrat";
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.navbar .grow-list .list .list-item:first-child::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left:45px;
+    height: 7px;
+    width: 1.2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    
+}
+.navbar .grow-list .list .list-item:first-child::after {
+    content: "";
+    position: absolute;
+    left:50px;
+    top: 9px;
+    height: 7px;
+    width: 1.2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+   
+}
+
+.hero{
+    font-family: "Poppins", serif;
+    margin-top: 0px;
+    height: 90vh;
+    background-image: url(assets/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:  center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+   
+    
+}
+
+
+.hero .hero-heading{
+    
+    width:700px;
+    position: absolute;
+    top:180px;
+    left: 380px;
+    font-size: 4rem;
+    text-align: center;
+    
+}
+.hero .hero-description{
+    width:700px;
+    position: absolute;
+    top:370px;
+    left: 380px;
+    text-align: center;
+}
+.hero .button-large{
+    width:200px;
+    margin-top: 25%;
+    text-align: center;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    background-color: #b90ec4;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
